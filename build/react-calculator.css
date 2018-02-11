@@ -1,0 +1,112 @@
+body {
+ background: #e6e2d3;
+}
+
+h1 {
+  text-align: center;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+nav {
+  align-items: center;
+  margin: 0 auto 12px auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  marginRight: 1rem;
+  padding-right: 1rem;
+}
+
+#about, #background{
+  align-items: center;
+  margin: 3rem auto; 
+  max-width: 600px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#about h2, #background h2 {
+  text-align: center;  
+}
+
+#calculator {
+  background: #3e4444;
+  margin: 20px auto 20px auto;
+  padding: 0px 5px 5px 5px;
+  width: 230px;
+  border-radius: 10px;
+  border: 2px outset  #3333ff ;
+
+}
+
+#readout {
+  margin: 20px 40px 0px 10px ;
+  padding: 5px 5px 0px 0px;
+   font-family: 'Segment7Standard'; 
+   font-weight: normal; 
+   font-style: italic; 
+  font-size: xx-large;
+  text-align: right;
+  width: 195px;
+  background-color: black;
+  color: red;
+}
+
+div #inputs {
+    display: table;
+}
+
+#inputs div.controls {
+  display: table-row;
+}
+
+#inputs div.controls:button {
+  display: table-cell;
+}
+
+#calculator button {
+  margin: 0px 0px 10px 10px;
+  padding:  15px;
+  border-radius: 10px;
+  font-size: large;
+  font-family: monospace;
+  background: #c2c2d6;
+}
+
+button #zero {
+  margin: 0px 0px 0px 5px;
+  padding:  15px 30px 15px 30px;
+  border-radius: 10px;
+  font-size: large;
+  font-family: monospace;
+  background: #f4e1d2;
+}
+
+#calculator button:focus, button:active {
+  outline: none !important;
+}
+
+#calculator button.num {
+    background-color: #f4e1d2;
+}
+
+div.controls {
+  margin: 30px;
+}
+
+#calculator button:hover {
+  background: #9494b8;
+}
+
+#calculator button:visited {
+  outline-style: none;
+}
