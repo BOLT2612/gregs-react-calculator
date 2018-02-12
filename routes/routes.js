@@ -10,6 +10,6 @@ module.exports = (app) => {
   app.get('/background', rcController.landing);
   app.get('/contact', rcController.landing);
   app.get('/calculator', rcController.landing);
-  
 
+  app.post('/send-email', rcController.sendEmail);
 }
