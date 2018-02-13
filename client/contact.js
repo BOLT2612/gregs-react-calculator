@@ -47,7 +47,7 @@ export default class Contact extends Component {
   render() {
     return (
         <div>
-          <h2>Contact Component</h2>
+          <h2>Contact Component: Server not yet implemented (no email generated yet, soon to come)</h2>
           <form onSubmit={this.handleSubmit}>
             <label>
               Your Email:<br />

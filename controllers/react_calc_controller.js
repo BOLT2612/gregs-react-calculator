@@ -1,7 +1,7 @@
 //react_calc_controller.js
 const path = require('path');
 const BUILD_DIR = path.resolve(__dirname, '../build');
-const sendmail = require('sendmail')({silent: true});
+const sendmail = require('sendmail')();
 
 module.exports = {
   // simple(req, res) {
@@ -16,14 +16,14 @@ module.exports = {
     console.log("send email called", req.body.emailAddr, req.body.message);
     res.send('contact email received');
 
-    sendmail({
-      from: 'no-reply@yourdomain.com',
-      to: 'h88k988-reactcalculator@yahoo.com',
-      subject: 'test sendmail',
-      html: 'Mail of test sendmail '
-    }, (err, reply) => {
-      console.log(err && err.stack);
-      console.dir(reply);
-    });
+    // sendmail({
+    //   from: 'no-reply@yourdomain.com',
+    //   to: 'XXXXXXXXXXXXXXXX@xxxxxx.com',
+    //   subject: 'test sendmail',
+    //   html: 'Mail of test sendmail '
+    // }, (err, reply) => {
+    //   console.log(err && err.stack);
+    //   console.dir(reply);
+    // });
   }
 }
